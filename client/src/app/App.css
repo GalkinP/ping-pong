@@ -1,0 +1,313 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 15px;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+.navbar {
+  width: 100%;
+  background-color: #213850;
+  /* padding: 10px; */
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #9a96e9;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+ 
+}
+
+.navbar ul li a:hover {
+  text-shadow: #d7d5f8 0 0 10px;
+}
+
+.navbar ul li.user-name,
+.navbar ul li.user-avatar {
+  flex: 0;
+}
+
+.navbar ul li.user-name {
+  color: #bcb5d8;
+  font-weight: bold;
+}
+
+.navbar ul li.user-avatar img {
+  width:50px;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+.navbar ul li:not(.user-name):not(.user-avatar) {
+  flex: 1;
+}
+
+
+.navbar ul li.user-name,
+.navbar ul li.user-avatar {
+  flex: 0;
+}
+
+
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.userCard {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: #9ba4e9 0 0 10px;
+}
+
+.userCard:hover {
+  box-shadow: #555 0 0 10px;
+}
+
+.userCard img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+padding: 10px;
+  border-radius: 5px;
+}
+.userCard h3,p {
+  margin: 0;
+}
+.userCard a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.userPage {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+}
+.userPage img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 30px;
+
+}
+
+
+.createTournament{
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+}
+
+
+.registration-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* PlayerCard */
+
+.playerCard {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: #9ba4e9 0 0 10px;
+}
+.playerCard:hover {
+  box-shadow: #555 0 0 10px;
+}
+.playerCard h3,p {
+  margin: 0;
+}
+
+.playerUpdateForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerCard a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: background-color 0.3s ease;}
+
+
+/* add tournament */
+
+.createTournament {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #d6d2f2;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(75, 146, 193, 0.559);
+}
+
+.createTournamentForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.createTournamentForm label {
+  margin-bottom: 10px;
+}
+
+.createTournamentForm input,
+.createTournamentForm select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* TournamentPage */
+
+.tournamentsPage {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tournamentCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.tournamentCard a{
+  text-decoration: none;
+  color: #a13434;
+  font-weight: bold;
+
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.tournamentCard a:hover{
+  text-shadow: #333 0 0 10px;
+}
+
+
+.team{
+  display: flex;
+
+  align-items: center;
+  padding: 30px;
+}
+
+.game{
+  margin:  15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: #9ba4e9 0 0 10px;
+}
+
+.team {
+ background-color: rgba(85, 255, 0, 0.26);
+;
+}
+.team .loose {
+  background-color: rgba(128, 0, 0, 0.056);
+}
+
+.vs{
+  
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.vs img{
+  
+  padding-left: 220px;
+  position: absolute;
+  width: 80px;
+  display: block;
+  
+}
+.divider{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #a13434;
+}
+
+

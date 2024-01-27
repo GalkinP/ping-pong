@@ -1,0 +1,50 @@
+.BasketPage {
+  display: flex;
+}
+
+.song{
+  margin: 20px;
+  box-shadow: 5px 5px 10px grey;
+  background-color: rgba(232, 215, 250, 0.425);
+}
+
+.songsDiv {
+  display: flex;
+}
+
+
+.mainPage {
+  z-index: 0;
+}
+
+.basketName {
+  border: 1px solid rgba(255, 0, 85, 0.23);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(112, 112, 202, 0.384);
+  margin: 5px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+.basketName:hover {
+  background-color: rgba(207, 133, 133, 0.466);
+  transform: scale(1.005);
+}
+
+.input {
+  background-color: rgb(117, 103, 240);
+  text-decoration: white;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+
+
