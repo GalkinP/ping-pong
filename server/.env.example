@@ -1,0 +1,2 @@
+ACCESS_TOKEN_SECRET = 'secretA'
+REFRESH_TOKEN_SECRET = 'secretR'
